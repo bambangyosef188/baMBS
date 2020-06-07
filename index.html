@@ -1,0 +1,49 @@
+Verifying a website with Brave Rewards by adding a TXT record in Advanced DNS Zone Editor
+<br />
+<br />
+<div style="text-align: center;">
+<a href="https://brave.com/bam618">Download &amp; EARN MONEY WITH BRAVE</a></div>
+<div style="text-align: left;">
+<br /></div>
+<div style="background-color: white; box-sizing: inherit; color: #535358; font-family: Montserrat; font-size: 16px; overflow-wrap: break-word;">
+<span style="color: #0074db;"><span style="box-sizing: inherit;">rave</span></span>&nbsp;is an innovative web browser that allows users to accrue and then tip publishers with a cryptocurrency called BAT (Basic Attention Token). If you are a content creator with your own website, you will probably want to verify that site with Brave Rewards so that you can start collecting contributions from your readers.</div>
+<div style="background-color: white; box-sizing: inherit; color: #535358; font-family: Montserrat; font-size: 16px; overflow-wrap: break-word;">
+Verification is relatively straightforward, with several options including the use of a&nbsp;<span style="color: #0074db;"><span style="box-sizing: inherit;">dedicated WordPress plugin</span></span>. However if your site is not built with WordPress, or it is but you don't wish to add another plugin (I feel you!), then a good alternative is to add a TXT record to your DNS configuration. However the instructions provided by Brave Rewards during this process are not quite as comprehensive as they could be, especially if you are not very familiar with DNS settings, so I hope the following explanation helps clarify things.</div>
+<div style="background-color: white; box-sizing: inherit; color: #535358; font-family: Montserrat; font-size: 16px; overflow-wrap: break-word;">
+The first few steps are the same no matter what verification method you plan to use:</div>
+<ol style="background-color: white; box-sizing: inherit; color: #535358; font-family: Montserrat; font-size: 16px;">
+<li style="box-sizing: inherit;">Sign up for an account on the&nbsp;<span style="color: #0074db;"><span style="box-sizing: inherit;">Brave Rewards Creators website</span></span></li>
+<li style="box-sizing: inherit;">Click on&nbsp;<span style="box-sizing: inherit; font-weight: bolder;">Add Channel</span>&nbsp;in the website header</li>
+<li style="box-sizing: inherit;">Click on&nbsp;<span style="box-sizing: inherit; font-weight: bolder;">Website</span></li>
+<li style="box-sizing: inherit;">Enter the domain (no need to include https:// or www.)</li>
+</ol>
+<h3 style="background-color: white; box-sizing: inherit; color: #2f313d; font-family: Montserrat; font-size: 24px; font-weight: 500; margin: 1.2em 0px 0px;">
+No Plugin Baby</h3>
+<div style="background-color: white; box-sizing: inherit; color: #535358; font-family: Montserrat; font-size: 16px; overflow-wrap: break-word;">
+If your site is built with WordPress, Brave will detect this and assume you want to use the plugin verification method. Click on&nbsp;<span style="box-sizing: inherit; font-weight: bolder;">Choose Different Verification Method</span>&nbsp;in the top right and then select&nbsp;<span style="box-sizing: inherit; font-weight: bolder;">I'll edit my DNS record</span>. Otherwise, just select&nbsp;<span style="box-sizing: inherit; font-weight: bolder;">I'll edit my DNS record</span>.</div>
+<div style="background-color: white; box-sizing: inherit; color: #535358; font-family: Montserrat; font-size: 16px; overflow-wrap: break-word;">
+At this stage, Brave will provide you with the instruction "Copy and paste the info below into the zone file for yourdomain.com using your DNS host's control panel". As you can see, the info given is for for two fields -&nbsp;<span style="box-sizing: inherit; font-weight: bolder;">Type</span>&nbsp;and&nbsp;<span style="box-sizing: inherit; font-weight: bolder;">Value</span>&nbsp;(or TXT Value / Data):</div>
+<div style="background-color: white; box-sizing: inherit; color: #535358; font-family: Montserrat; font-size: 16px; overflow-wrap: break-word;">
+<img alt="Brave verification values" class="screengrab aligncenter wp-image-921 size-full" height="589" sizes="(max-width: 921px) 100vw, 921px" src="https://www.technicallyproduct.co.uk/wp-content/uploads/2020/01/brave-verification-values.png" srcset="https://www.technicallyproduct.co.uk/wp-content/uploads/2020/01/brave-verification-values.png 921w, https://www.technicallyproduct.co.uk/wp-content/uploads/2020/01/brave-verification-values-450x288.png 450w, https://www.technicallyproduct.co.uk/wp-content/uploads/2020/01/brave-verification-values-768x491.png 768w" style="border: 1px solid rgb(221, 221, 221); box-shadow: rgb(238, 238, 238) 8px 8px; box-sizing: inherit; display: block; height: auto; margin: 2em auto; max-width: 100%;" width="921" /></div>
+<div style="background-color: white; box-sizing: inherit; color: #535358; font-family: Montserrat; font-size: 16px; overflow-wrap: break-word;">
+Now it's time to add your DNS record. If, like me, you use cPanel, then the utility you need is 'Advanced DNS Zone Editor'. Click on this within cPanel (it may well be in the DOMAINS subsection), and then select your domain from the drop-down.</div>
+<div style="background-color: white; box-sizing: inherit; color: #535358; font-family: Montserrat; font-size: 16px; overflow-wrap: break-word;">
+And we've reached the confusing bit - in Advanced DNS Zone Editor, the 'Add a Record' section contains four mandatory fields - Name, TTL, Type and Address:</div>
+<div style="background-color: white; box-sizing: inherit; color: #535358; font-family: Montserrat; font-size: 16px; overflow-wrap: break-word;">
+<img alt="Add DNS record" class="screengrab aligncenter wp-image-923 size-full" height="289" sizes="(max-width: 545px) 100vw, 545px" src="https://www.technicallyproduct.co.uk/wp-content/uploads/2020/01/add-dns-record.png" srcset="https://www.technicallyproduct.co.uk/wp-content/uploads/2020/01/add-dns-record.png 545w, https://www.technicallyproduct.co.uk/wp-content/uploads/2020/01/add-dns-record-450x239.png 450w" style="border: 1px solid rgb(221, 221, 221); box-shadow: rgb(238, 238, 238) 8px 8px; box-sizing: inherit; display: block; height: auto; margin: 2em auto; max-width: 100%;" width="545" /></div>
+<div style="background-color: white; box-sizing: inherit; color: #535358; font-family: Montserrat; font-size: 16px; overflow-wrap: break-word;">
+But Brave has only provided values for two fields, only one of which is listed in 'Add a Record'! The first thing to do is change the 'Type' field from 'A' to 'TXT'. This will replace the 'Address' field with a field called 'TXT Data'. You can now paste in the Value from Brave into this field.</div>
+<div style="background-color: white; box-sizing: inherit; color: #535358; font-family: Montserrat; font-size: 16px; overflow-wrap: break-word;">
+That leaves Name and TTL to complete. For Name, just put your naked or root domain name (that is, your domain without the preceding www). It doesn't matter if you already have a TXT record with this Name - you can have more than one.</div>
+<div style="background-color: white; box-sizing: inherit; color: #535358; font-family: Montserrat; font-size: 16px; overflow-wrap: break-word;">
+TTL stands for Time To Live and is the number of seconds that the record will be cached by a DNS server. Set this to 30 initially, and once everything is working you can go back and increase it to something like 43200 (12 hours).</div>
+<div style="background-color: white; box-sizing: inherit; color: #535358; font-family: Montserrat; font-size: 16px; overflow-wrap: break-word;">
+So to recap, you will end up with the following settings:</div>
+<div style="background-color: white; box-sizing: inherit; color: #535358; font-family: Montserrat; font-size: 16px; overflow-wrap: break-word;">
+<span style="box-sizing: inherit; font-weight: bolder;">Name:</span>&nbsp;yourdomain.com<br style="box-sizing: inherit;" /><span style="box-sizing: inherit; font-weight: bolder;">TTL:</span>&nbsp;30<br style="box-sizing: inherit;" /><span style="box-sizing: inherit; font-weight: bolder;">Type:</span>&nbsp;TXT<br style="box-sizing: inherit;" /><span style="box-sizing: inherit; font-weight: bolder;">TXT Data:</span>&nbsp;(The value provided to you by Brave)</div>
+<div style="background-color: white; box-sizing: inherit; color: #535358; font-family: Montserrat; font-size: 16px; overflow-wrap: break-word;">
+Click&nbsp;<span style="box-sizing: inherit; font-weight: bolder;">Add Record</span>&nbsp;and you should see your new record appear in the 'Zone File Records' section of Advanced DNS Zone Editor. You will see that a full stop has been added to the end of the 'Name' value but that's OK and nothing to worry about.</div>
+<div style="background-color: white; box-sizing: inherit; color: #535358; font-family: Montserrat; font-size: 16px; overflow-wrap: break-word;">
+Now back on the BAT website, click&nbsp;<span style="box-sizing: inherit; font-weight: bolder;">Verify DNS Record</span>. For me, verification happened instantly, but Brave does warn that it could take 24 hours... so be patient.</div>
+<div style="text-align: left;">
+<br /></div>
